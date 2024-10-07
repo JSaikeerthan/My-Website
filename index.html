@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>My Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header"> 
+            <div class="container">
+                <nav> 
+                    <img src="Images/logo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <ion-icon name="close-outline" onclick="closemenu()"></ion-icon>
+                    </ul>
+                    <ion-icon name="menu-outline" onclick="openmenu()"></ion-icon>
+                </nav>
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I'm Saikeerthan</h1>
+                </div>
+            </div>
+        </div>
+        
+        <!--about-->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/user.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a CSE B.Tech student having interests in Web application design & development and focused on 
+                            creating dynamic & user-friendly environment. I am zealous towards technology and always curious
+                             about exploring new things. I strive with complete determination and movtivation to complete any 
+                             given task either in a team or by myself.</p>
+                             <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                             </div>
+                             <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI</span><br>Developing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web/App development </li>
+                                    <li><span>Databases</span><br>SQL Data operations and retrieval </li>
+                                    <li><span>Programming</span><br>Coding with Programming Languages</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2018</span><br>Completed 10th from AbuDhabi Indian school.</li>
+                                    <li><span>2020</span><br>Completed Intermediate from Narayana Junior College.</li>
+                                    <li><span>2024</span><br>Completd B.Tech from SR International Institute of Technology.</li>
+                                    <li><span>2024</span><br>Pursuing Master's from Wichita State University.</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2024</span><br>Web Development & Hosting Internship in GuaravGo Technologies</li>
+                                </ul>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- --------------------------- portfolio------------------------------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/pic 1.jpeg">
+                        <div class="layer">
+                            <h3>Block Hunter Using Blockchain Web App</h3>
+                            <p>The app used for filtering or blocking users basd on a given description. 
+                                View it on GitHub.</p>
+                                <a href="https://github.com/JSaikeerthan/Block-Hunter/tree/main" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/pic 2.jpeg">
+                        <div class="layer">
+                            <h3>Password Authentication Web App</h3>
+                            <p>The app that can be used for password authentication. 
+                                View it on GitHub.</p>
+                                <a href="https://github.com/JSaikeerthan/HoneyKeyword-Password-Authentication" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/pic 3.jpeg">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app that connects you to the talented people around the world. 
+                                Download it from play store.</p>
+                                <a href="#"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+<!-- -------------------contact me----------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><ion-icon name="mail-outline"></ion-icon>  saikeerthan05@gmail.com</p>
+                <p><ion-icon name="call-outline"></ion-icon>  +91 7032553912</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/saikeerthan-jami-912418261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.instagram.com/saikeerthan05/?igsh=bmZhOXV3aTdkanl0" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://github.com/JSaikeerthan" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+                <a href="Images/My-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <span>&copy;</span> Saikeerthan</p>
+    </div>
+</div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+        </script>
+
+        <script>
+            var sidemu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemu.style.right="0";
+            }
+            function closemenu(){
+                sidemu.style.right="-200px";
+            }
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
